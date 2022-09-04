@@ -13,9 +13,15 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine ("Введите третье число");
 int numberC = Convert.ToInt32(Console.ReadLine());
 
-int countmax = numberA;
-if (countmax > numberB)
+if (numberA > numberB && numberA > numberC)
 {
-    countmax == numberA;
+    Console.WriteLine ("Максимальное число" + " " + numberA);
 }
-else (countmax == numberB);
+else if (numberB > numberA && numberB > numberC)
+{
+    Console.WriteLine ("Максимальное число" + " " + numberB);
+}
+else if (numberC > numberA && numberC > numberB)
+{
+    Console.WriteLine ("Максимальное число" + " " + numberC);
+}
